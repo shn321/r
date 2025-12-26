@@ -1,0 +1,26 @@
+name <- "Shahaan"
+age <- 20
+score <- 98.5
+
+PI <- 3.14159
+GRAVITY <- 9.81
+
+is_student <- TRUE
+
+grades <- c(88, 96, 98)
+
+student_info <- list(
+  name = "Shahaan",
+  age = 20,
+  scores = grades
+)
+
+cat("Data type of 'name' :", typeof(name), "\n")
+cat("Data type of 'age' :", typeof(age), "\n")
+cat("Data type of 'score' :", typeof(score), "\n")
+cat("Data type of 'is_student' :", typeof(is_student), "\n")
+cat("Data type of 'grades' :", typeof(grades), "\n")
+cat("Data type of 'student_info' :", typeof(student_info), "\n")
+
+cat("Constant value of 'PI' :", PI, "\n")
+cat("Constant value of 'GRAVITY' :",GRAVITY,"\n")
