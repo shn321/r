@@ -1,0 +1,27 @@
+# Function with default values
+calc <- function(a = 10, b = 5) {
+
+ # Operators
+ add <- a + b
+ sub <- a - b
+ mul <- a * b
+ div <- a / b
+
+ # Control structure
+ if (a > b) {
+ msg <- "a is greater"
+ } else {
+ msg <- "b is greater"
+ }
+
+ # Return complex object (list)
+ return(list(add = add, sub = sub, mul = mul, div = div, msg = msg))
+}
+# Call the function
+result <- calc()
+# Display results using cat()
+cat("Addition:", result$add, "\n")
+cat("Subtraction:", result$sub, "\n")
+cat("Multiplication:", result$mul, "\n")
+cat("Division:", result$div, "\n")
+cat("Message:", result$msg, "\n")
