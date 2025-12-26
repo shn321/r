@@ -1,0 +1,12 @@
+quicksort <- function(x) {
+ if (length(x) <= 1) {
+ return(x)
+ }
+ p <- x[1]
+ left <- x[x < p]
+ right <- x[x > p]
+ c(quicksort(left), p, quicksort(right))
+}
+num <- c(8, 3, 5, 1, 9)
+print("Quick Sort Result:")
+print(quicksort(num))
