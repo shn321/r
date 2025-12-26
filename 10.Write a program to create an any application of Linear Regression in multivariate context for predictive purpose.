@@ -1,0 +1,17 @@
+# --- Create Data ---
+data <- data.frame(
+ Experience = c(1, 2, 3, 4, 5),
+ Age = c(22, 25, 28, 30, 35),
+ Salary = c(25000, 30000, 35000, 40000, 45000)
+)
+# --- Linear Regression Model ---
+model <- lm(Salary ~ Experience + Age, data = data)
+# --- Predict Salary ---
+new <- data.frame(
+ Experience = c(6, 7),
+ Age = c(32, 35)
+)
+pred <- predict(model, new)
+# --- Display Predicted Salaries ---
+print("Predicted Salaries:")
+print(pred)
