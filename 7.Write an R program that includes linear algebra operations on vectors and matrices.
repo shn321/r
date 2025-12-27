@@ -13,3 +13,38 @@ cat("Matrix Multiplication:", A %*% B, "\n")
 cat("Transpose of A:", t(A), "\n")
 cat("Determinant of A:", det(A), "\n")
 cat("Inverse of A:", solve(A), "\n")
+
+
+
+
+------------------------------------------------------------------------------------------
+
+
+vector1 <- c(1, 2, 3, 4)
+vector2 <- c(5, 6, 7, 8)
+vector_sum <- vector1 + vector2
+cat("Vector Sum:", vector_sum, "\n")
+vector_diff <- vector1 - vector2
+cat("Vector Difference:", vector_diff, "\n")
+scalar <- 2
+vector_product <- scalar * vector1
+cat("Scalar Vector Product:", vector_product, "\n\n")
+matrix1 <- matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3)
+matrix2 <- matrix(c(6, 7, 8, 9, 4, 2), nrow = 2, ncol = 3)
+cat("Matrix 1:\n")
+print(matrix1)
+cat("Matrix 2:\n")
+print(matrix2)
+matrix_sum <- matrix1 + matrix2
+cat("Matrix Sum:\n")
+print(matrix_sum)
+matrix_diff <- matrix1 - matrix2
+cat("Matrix Difference:\n")
+print(matrix_diff)
+matrix3 <- matrix(c(1, 2, 3, 4, 5, 6), nrow = 3, ncol = 2)
+matrix_product <- matrix1 %*% matrix3
+cat("Matrix Product:\n")
+print(matrix_product)
+square_matrix <- matrix(c(1, 2, 3, 4), nrow = 2)
+matrix_det <- det(square_matrix)
+cat("Determinant:", matrix_det, "\n")
